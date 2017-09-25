@@ -11,7 +11,7 @@ RUN mkdir -p /srv/software/TrimGalore && \
   wget http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/trim_galore_v0.4.1.zip && \
   unzip trim_galore_v0.4.1.zip && \
   mv trim_galore_zip/* . && \
-  rm trim_galore_zip trim_galore_v0.4.1.zip
+  rm -rf trim_galore_zip trim_galore_v0.4.1.zip
 ENV PATH=/srv/software/TrimGalore/:${PATH}
 
 #INSTALL FASTQC v0.11.5
